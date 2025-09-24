@@ -1,10 +1,21 @@
-datasource:
-    url: jdbc:mysql://localhost:3306/jay_ecommerce
+ boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  
+  datasource:
     username: root
     password: Jay@271203
-  jpa:
+    url: jdbc:mysql://localhost:3306/jay_ecommerce
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+ jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-server:
-  port: 8081
+        
