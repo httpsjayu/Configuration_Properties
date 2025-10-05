@@ -1,1 +1,31 @@
+spring:
+  application:
+    name: Cart-Service
 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jay-ecommerce
+    username: root
+    password: Jay@271203
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 8083
+
+cart-service:
+  messages:
+    CartAdded: Cart Added Successfully
+    CartAddedErr: Failed to Add into Cart
+    CartUpdated: Cart Updated Successfully
+    CartUpdateErr: Failed to Update Cart
+    CartRetrieve: Cart Retrieve Successfully
+		CartRetriveErr: Failed to Retrieve Cart
+    CartDelete : Cart Delete Successfully
+		CartDeleteErr : Failed to Delete Cart
