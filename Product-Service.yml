@@ -1,1 +1,48 @@
+spring:
+  application:
+    name: Product-Service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jay-eccomerce
+    username: root
+    password: Jay@271203
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 8082
+
+product-service:
+  messages:
+    CategoryAdded: "Category Added Successfully"
+    CategoryAddedErr: "Failed to Add Category"
+    CategoryUpdated: "Category Updated Successfully"
+    CategoryUpdateErr: "Failed to Update Category"
+    CategoryFetch: "Category Fetched Successfully"
+    CategoryFetchErr: "Failed to Fetch Category"
+    CategorySelect: "Category Retrieved Successfully"
+    CategorySelectErr: "Failed to Retrieve Category"
+    CategoryDelete: "Category Deleted Successfully"
+    CategoryDeleteErr: "Failed to Delete Category"
+
+    ProductAdded: "Product Added Successfully"
+    ProductAddedErr: "Failed to Add Product"
+    ProductUpdated: "Product Updated Successfully"
+    ProductUpdateErr: "Failed to Update Product"
+    ProductFetch: "Product Fetched Successfully"
+    ProductFetchErr: "Failed to Fetch Product"
+    ProductSelect: "Product Retrieved Successfully"
+    ProductSelectErr: "Failed to Retrieve Product"
+    ProductDelete: "Product Deleted Successfully"
+    ProductDeleteErr: "Failed to Delete Product"
+
+    ProductStock: "Stock Updated Successfully"
+    ProductStockErr: "Insufficient Stock to Complete Update"
 
