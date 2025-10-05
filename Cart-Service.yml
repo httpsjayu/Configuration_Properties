@@ -9,6 +9,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -27,6 +28,6 @@ cart-service:
     CartUpdated: Cart Updated Successfully
     CartUpdateErr: Failed to Update Cart
     CartRetrieve: Cart Retrieve Successfully
-		CartRetriveErr: Failed to Retrieve Cart
+		CartRetrieveErr: Failed to Retrieve Cart
     CartDelete : Cart Delete Successfully
 		CartDeleteErr : Failed to Delete Cart
