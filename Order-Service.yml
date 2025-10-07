@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: Order-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jay_ecommerce
+    username: root
+    password: Jay@271203
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 8084
+
+order-service:
+  messages:
+    OrderAdded: Order Added Successfully
+    OrderAddedErr: Failed to Add into Order
+    OrderUpdated: Order Updated Successfully
+    OrderUpdateErr: Failed to Update Order
+    OrderRetrieve: Order Retrieved Successfully
+    OrderRetrieveErr: Failed to Retrieve Order
+    OrderByStatusAndDate: Order Retrieved Successfully by Status And Date
+    OrderByStatusAndDateErr: Failed to Retrieve Order by Status And Date
+    OrderFetch: Order Fetched Successfully
+    OrderFetchErr: Failed to Fetch Order
