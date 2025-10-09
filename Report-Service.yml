@@ -1,5 +1,25 @@
+
 spring:
   application:
     name: Report-Service
-  config:
-    import: optional:configserver:http://localhost:2222/
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jay_ecommerce
+    username: root
+    password: Jay@271203
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+server:
+  port: 8085
+
+
+  
+  
