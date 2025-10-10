@@ -7,7 +7,6 @@ spring:
       client:
         url: http://localhost:1111/
 
-
   datasource:
     url: jdbc:mysql://localhost:3306/jay_ecommerce
     username: root
@@ -22,7 +21,7 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
 
- management:
+management:
   endpoints:
     web:
       exposure:
@@ -33,11 +32,5 @@ server:
 
 cart-service:
   messages:
-    CartAdded: Cart Added Successfully
-    CartAddedErr: Failed to Add into Cart
-    CartUpdated: Cart Updated Successfully
-    CartUpdateErr: Failed to Update Cart
-    CartRetrieve: Cart Retrieve Successfully
-    CartRetrieveErr: Failed to Retrieve Cart
-    CartDelete: Cart Delete Successfully
-    CartDeleteErr: Failed to Delete Cart
+    CartAdded: "Cart Added Successfully"
+    CartAdd
