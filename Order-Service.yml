@@ -24,13 +24,13 @@ server:
 
 order-service:
   messages:
-    OrderAdded: Order Added Successfully
-    OrderAddedErr: Failed to Add into Order
-    OrderUpdated: Order Updated Successfully
-    OrderUpdateErr: Failed to Update Order
-    OrderRetrieve: Order Retrieved Successfully
-    OrderRetrieveErr: Failed to Retrieve Order
-    OrderByStatusAndDate: Order Retrieved Successfully by Status And Date
-    OrderByStatusAndDateErr: Failed to Retrieve Order by Status And Date
-    OrderFetch: Order Fetched Successfully
-    OrderFetchErr: Failed to Fetch Order
+    addOrders: Order Added Successfully
+    addOrdersErr: Failed to Add into Order
+    updateOrder: Order Updated Successfully
+    updateOrderErr: Failed to Update Order
+    selectOrdersByUserId: Order Retrieved Successfully
+    selectOrderByUserId: Failed to Retrieve Order
+    selectOrderByDateAndStatus: Order Retrieved Successfully by Status And Date
+   selectOrdersByDateAndStatusErr: Failed to Retrieve Order by Status And Date
+    fetchOrders: Order Fetched Successfully
+    fetchOrdersErr: Failed to Fetch Order
