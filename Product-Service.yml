@@ -1,18 +1,11 @@
 spring:
   application:
     name: Product-Service
-    
+
   boot:
     admin:
       client:
         url: http://localhost:1111/
-
- management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-
 
   datasource:
     url: jdbc:mysql://localhost:3306/jay_ecommerce
@@ -28,6 +21,12 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8082
 
@@ -37,9 +36,9 @@ product-service:
     CategoryAddedErr: "Failed to Add Category"
     CategoryUpdated: "Category Updated Successfully"
     CategoryUpdateErr: "Failed to Update Category"
-    CategoryFetch: "Category Fetch Successfully"
+    CategoryFetch: "Category Fetched Successfully"
     CategoryFetchErr: "Failed to Fetch Category"
-    CategorySelect: "Category Retrieve Successfully"
+    CategorySelect: "Category Retrieved Successfully"
     CategorySelectErr: "Failed to Retrieve Category"
     CategoryDelete: "Category Deleted Successfully"
     CategoryDeleteErr: "Failed to Delete Category"
@@ -57,4 +56,3 @@ product-service:
 
     ProductStock: "Stock Updated Successfully"
     ProductStockErr: "Insufficient Stock to Complete Update"
-
