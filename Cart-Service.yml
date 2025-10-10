@@ -2,7 +2,6 @@ spring:
   application:
     name: Cart-Service
 
- spring:
   boot:
     admin:
       client:
@@ -22,6 +21,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
+
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 server:
   port: 8083
