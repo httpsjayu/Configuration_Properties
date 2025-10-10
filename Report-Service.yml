@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: Report-Service
@@ -8,18 +7,11 @@ spring:
       client:
         url: http://localhost:1111/
 
-
   datasource:
     url: jdbc:mysql://localhost:3306/jay_ecommerce
     username: root
     password: Jay@271203
     driver-class-name: com.mysql.cj.jdbc.Driver
-
- management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
 
   jpa:
     hibernate:
@@ -29,9 +21,11 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 server:
   port: 8085
-
-
-  
-  
