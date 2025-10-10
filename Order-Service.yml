@@ -2,9 +2,6 @@ spring:
   application:
     name: Order-Service
 
-  config:
-    import: optional:configserver:http://localhost:2222/
-
   datasource:
     url: jdbc:mysql://localhost:3306/jay_ecommerce
     username: root
@@ -21,6 +18,7 @@ spring:
 
 server:
   port: 8084
+
 
 order-service:
   messages:
