@@ -33,4 +33,10 @@ server:
 cart-service:
   messages:
     CartAdded: "Cart Added Successfully"
-    CartAdd
+    CartAddedErr: "Failed to Add into Cart"
+    CartUpdated: "Cart Updated Successfully"
+    CartUpdateErr: "Failed to Update Cart"
+    CartRetrieve: "Cart Retrieved Successfully"
+    CartRetrieveErr: "Failed to Retrieve Cart"
+    CartDelete: "Cart Deleted Successfully"
+    CartDeleteErr: "Failed to Delete Cart"
