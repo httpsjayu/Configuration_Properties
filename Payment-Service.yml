@@ -33,5 +33,6 @@ server:
 razorpay:
   key:
     id: rzp_test_RSWXCvpWHSPozz
-  secret: 9CdCXyviZbO7GikPFI8qar79
+    secret: 9CdCXyviZbO7GikPFI8qar79
+
 
