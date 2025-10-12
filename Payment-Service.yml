@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: Payment-Service
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jay_ecommerce
+    username: root
+    password: Jay@271203
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8086
+
+razorpay:
+  key:
+    id: rzp_test_RS762ZpMR0mX9T
+  secret: w4Re0T4wlfk7SjKDhvV2jF9D
