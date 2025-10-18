@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Venue-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/wedding_mgn   
+    username: root                           
+    password: Jay@271203                            
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 2713
+
+venue-service:
+  messages:
+    VenueAdded: "Venue Added Successfully"
+    VenueAddedErr: "Failed to Add into Venue"
+    VenueFetch: "Venue Fetched Successfully"
+    VenueFetchErr: "Failed to Fetch Venues"
+    VenueByPrice: "Venue Fetched by Price"
+    VenueByPriceErr: "Failed to Fetch Venues by Price"
