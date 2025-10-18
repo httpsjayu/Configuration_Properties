@@ -18,9 +18,9 @@ server:
 
 venue-service:
   messages:
-    VenueAdded: "Venue Added Successfully"
-    VenueAddedErr: "Failed to Add into Venue"
-    VenueFetch: "Venue Fetched Successfully"
-    VenueFetchErr: "Failed to Fetch Venues"
-    VenueByPrice: "Venue Fetched by Price"
-    VenueByPriceErr: "Failed to Fetch Venues by Price"
+    VenueAdded: Venue Added Successfully
+    VenueAddedErr: Failed to Add into Venue
+    VenueFetch: Venue Fetched Successfully
+    VenueFetchErr: Failed to Fetch Venues
+    VenueByPrice: Venue Fetched by Price
+    VenueByPriceErr: Failed to Fetch Venues by Price
