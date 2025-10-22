@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Booking-Service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/wedding_mgn
+    username: root
+    password: Jay@271203
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 2714
+
+booking-service:
+  messages:
+    BookingSave: Booking Successfull
+    BookingSaveErr: Booking Unsuccessfull
+    BookingFetchUserId: Booking Fetched Successfully by UserId
+    BookingFetchUserIdErr: Failed to Fetch Booking by UserId
+    BookingFetchVenueId: Booking Fetched Successfully by VenueId
+    BookingFetchVenueIdErr: Failed to Fetch Booking by VenueId
+    BookingRetrieve: Booking Retrieved Successfully
+    BookingRetrieveErr: Failed to Retrieve Booking
