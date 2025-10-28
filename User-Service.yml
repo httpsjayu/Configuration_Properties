@@ -1,11 +1,13 @@
 spring:
   application:
     name: User-Service
+
   datasource:
     url: jdbc:mysql://localhost:3306/wedding_mgn
     username: root
     password: Jay@271203
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     show-sql: true
     hibernate:
@@ -13,6 +15,9 @@ spring:
 
 server:
   port: 2712
+
+jwt:
+  secret: mySuperSecretKeyForJwt12345
 
 user-service:
   messages:
