@@ -17,7 +17,7 @@ server:
   port: 2712
 
 jwt:
-  secret: mySuperSecretKeyForJwt12345
+  secret: MySecretKeyForJwtEncryption1234567890
 
 user-service:
   messages:
