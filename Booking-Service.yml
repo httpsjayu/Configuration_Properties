@@ -13,13 +13,21 @@ spring:
     hibernate:
       ddl-auto: update
 
+  kafka:            
+    bootstrap-servers: localhost:2715
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    topic:
+      name: booking-events  
+
 server:
   port: 2714
 
 booking-service:
   messages:
-    BookingSave: Booking Successfull
-    BookingSaveErr: Booking Unsuccessfull
+    BookingSave: Booking Successful
+    BookingSaveErr: Booking Unsuccessful
     BookingFetchUserId: Booking Fetched Successfully by UserId
     BookingFetchUserIdErr: Failed to Fetch Booking by UserId
     BookingFetchVenueId: Booking Fetched Successfully by VenueId
